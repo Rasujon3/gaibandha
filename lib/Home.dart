@@ -89,7 +89,7 @@ class _HomeState extends State<Home> {
               ),
               new ListTile(
                 title: Text(
-                  "Local News",
+                  "নদ ও নদী",
                   style: TextStyle(
                     fontSize: 20.0,
                     color: Colors.white,
@@ -97,7 +97,7 @@ class _HomeState extends State<Home> {
                 ),
                 onTap: () {
                   Navigator.of(context).pop();
-                  Navigator.of(context).push(new MaterialPageRoute(builder: (context)=> LocalControllerNews()));
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (context)=> SportsNews()));
                 },
                 leading: new Icon(
                   Icons.local_bar_rounded,
@@ -107,7 +107,7 @@ class _HomeState extends State<Home> {
               ),
               new ListTile(
                 title: Text(
-                  "Political News",
+                  "কৃতি ব্যক্তিত্ব",
                   style: TextStyle(
                     fontSize: 20.0,
                     color: Colors.white,
@@ -118,7 +118,7 @@ class _HomeState extends State<Home> {
                   Navigator.of(context).push(new MaterialPageRoute(builder: (context)=> PoliticsNews()));
                 },
                 leading: new Icon(
-                  Icons.adb,
+                  Icons.accessibility_new_sharp,
                   color: Colors.white,
                   size: 20.0,
                 ),
@@ -418,7 +418,7 @@ class _HomeState extends State<Home> {
                                                 builder: (context) => SportsNews()));
                                       },
                                       child: Text(
-                                        "Sports News",
+                                        "নদ ও নদী",
                                         style: TextStyle(
                                           fontSize: 19.0,
                                           color: Colors.white,
@@ -448,7 +448,7 @@ class _HomeState extends State<Home> {
                                                 builder: (context) => PoliticsNews()));
                                       },
                                       child: Text(
-                                        "Political News",
+                                        "কৃতি ব্যক্তিত্ব",
                                         style: TextStyle(
                                           fontSize: 19.0,
                                           color: Colors.white,

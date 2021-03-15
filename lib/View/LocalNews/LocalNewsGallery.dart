@@ -110,9 +110,10 @@ class _LocalNews_GalleryState extends State<LocalNews_Gallery> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  "দর্শনীয় স্থান",
+                                  //"দর্শনীয় স্থান",
+                                  snapshot.data[index].data["title"],
                                   style: TextStyle(
-                                    fontSize: 20.0,
+                                    fontSize: 15.0,
                                     color: Colors.white,
                                   ),
                                 ),

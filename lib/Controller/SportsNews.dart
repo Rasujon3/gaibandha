@@ -27,7 +27,7 @@ class _SportsNewsState extends State<SportsNews>with SingleTickerProviderStateMi
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Sports News"),
+        title: Text("নদ ও নদী"),
         backgroundColor: Color(0xFF272b4a),
 
         bottom: TabBar(
@@ -35,8 +35,8 @@ class _SportsNewsState extends State<SportsNews>with SingleTickerProviderStateMi
           indicatorColor: Colors.blueGrey,
           indicatorWeight: 5.0,
           tabs: [
-            new Tab(icon: Icon(Icons.view_headline,),text: "Sports News",),
-            new Tab(icon: Icon(Icons.image,),text: "Gallery",),
+            new Tab(icon: Icon(Icons.view_headline,),text: "নদ ও নদী",),
+            new Tab(icon: Icon(Icons.image,),text: "গ্যালারী",),
 
 
           ],

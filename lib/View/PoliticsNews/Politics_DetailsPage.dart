@@ -14,7 +14,7 @@ class _PoliticalNewsDetailsState extends State<PoliticalNewsDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Political News"),
+        title: Text("কৃতি ব্যক্তিত্ব"),
         backgroundColor: Color(0xFF222240),
       ),
       backgroundColor: Color(0xFF222240),
@@ -43,7 +43,7 @@ class _PoliticalNewsDetailsState extends State<PoliticalNewsDetails> {
           new Container(
             color: Color(0xFF272B4A),
             margin: EdgeInsets.all(10.0),
-            height: MediaQuery.of(context).size.height,
+            height: MediaQuery.of(context).size.height + 750.0,
             child: new Column(
               children: [
                 new Container(
@@ -107,7 +107,10 @@ class _PoliticalNewsDetailsState extends State<PoliticalNewsDetails> {
                   height: 5.0,
                 ),
                 new Text(
-                  widget.snapshot.data["content"],
+                  widget.snapshot.data["content"][0] + "\n\n" +
+                  widget.snapshot.data["content"][1] + "\n\n" +
+                  widget.snapshot.data["content"][2] + "\n\n" +
+                  widget.snapshot.data["content"][3] + "\n\n" ,
                   style: TextStyle(
                     fontSize: 15.0,
                     color: Colors.white,

@@ -13,7 +13,7 @@ class _PoliticsNews_GalleryState extends State<PoliticsNews_Gallery> {
     var firestore = Firestore.instance;
 
     QuerySnapshot snap =
-    await firestore.collection("InternationalAllNews").getDocuments();
+    await firestore.collection("kritisontan").getDocuments();
     return snap.documents;
   } // get data from server, table name internationalnews
 
@@ -33,7 +33,7 @@ class _PoliticsNews_GalleryState extends State<PoliticsNews_Gallery> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
               child: Text(
-                "Data Loading..",
+                "Data Loading...",
                 style: TextStyle(
                   fontSize: 18.0,
                   color: Colors.white,
@@ -89,6 +89,7 @@ class _PoliticsNews_GalleryState extends State<PoliticsNews_Gallery> {
                                 child: Image.network(
                                   snapshot.data[index].data["image"],
                                   height: 299.0,
+                                  width: MediaQuery.of(context).size.width,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -110,9 +111,10 @@ class _PoliticsNews_GalleryState extends State<PoliticsNews_Gallery> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  "Political News",
+                                  //"কৃতি ব্যক্তিত্ব",
+                                  snapshot.data[index].data["title"],
                                   style: TextStyle(
-                                    fontSize: 20.0,
+                                    fontSize: 15.0,
                                     color: Colors.white,
                                   ),
                                 ),

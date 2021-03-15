@@ -15,7 +15,7 @@ class _PoliticsNewsState extends State<PoliticsNews> {
     var firestore = Firestore.instance;
 
     QuerySnapshot snap =
-    await firestore.collection("InternationalAllNews").getDocuments();
+    await firestore.collection("kritisontan").getDocuments();
     return snap.documents;
   } // get data from server, table name internationalnews
 
@@ -36,7 +36,7 @@ class _PoliticsNewsState extends State<PoliticsNews> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
               child: Text(
-                "Data Loading..",
+                "Data Loading...",
                 style: TextStyle(
                   fontSize: 18.0,
                   color: Colors.white,
@@ -122,7 +122,10 @@ class _PoliticsNewsState extends State<PoliticsNews> {
                                           height: 6.0,
                                         ),
                                         Text(
-                                          snapshot.data[index].data["content"],
+                                          snapshot.data[index].data["content"][0]+ "\n\n" +
+                                          snapshot.data[index].data["content"][1]+ "\n\n" +
+                                          snapshot.data[index].data["content"][2]+ "\n\n" +
+                                          snapshot.data[index].data["content"][3]+ "\n\n" ,
                                           maxLines: 3,
                                           style: TextStyle(
                                             fontSize: 16.0,

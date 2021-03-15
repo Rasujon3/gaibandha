@@ -112,9 +112,10 @@ class _Internationalnews_galleryState extends State<Internationalnews_gallery> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  "নামকরণ ও ইতিহাস",
+                                  //"নামকরণ ও ইতিহাস",
+                                  snapshot.data[index].data["title"],
                                   style: TextStyle(
-                                    fontSize: 20.0,
+                                    fontSize: 15.0,
                                     color: Colors.white,
                                   ),
                                 ),

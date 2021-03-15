@@ -29,7 +29,7 @@ class _PoliticsNewsState extends State<PoliticsNews>with SingleTickerProviderSta
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Politics News"),
+        title: Text("কৃতি ব্যক্তিত্ব"),
         backgroundColor: Color(0xFF272b4a),
 
         bottom: TabBar(
@@ -37,8 +37,8 @@ class _PoliticsNewsState extends State<PoliticsNews>with SingleTickerProviderSta
           indicatorColor: Colors.blueGrey,
           indicatorWeight: 5.0,
           tabs: [
-            new Tab(icon: Icon(Icons.view_headline,),text: "Politics News",),
-            new Tab(icon: Icon(Icons.image,),text: "Gallery",),
+            new Tab(icon: Icon(Icons.view_headline,),text: "কৃতি ব্যক্তিত্ব",),
+            new Tab(icon: Icon(Icons.image,),text: "গ্যালারী",),
 
 
           ],

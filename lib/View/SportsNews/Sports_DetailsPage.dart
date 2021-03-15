@@ -14,7 +14,7 @@ class _SportsNewsDetailsState extends State<SportsNewsDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Sports News"),
+        title: Text("নদ ও নদী"),
         backgroundColor: Color(0xFF222240),
       ),
       backgroundColor: Color(0xFF222240),

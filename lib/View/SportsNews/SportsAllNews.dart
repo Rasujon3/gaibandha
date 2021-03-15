@@ -15,7 +15,7 @@ class _SportsNewsState extends State<SportsNews> {
     var firestore = Firestore.instance;
 
     QuerySnapshot snap =
-    await firestore.collection("InternationalAllNews").getDocuments();
+    await firestore.collection("nodnodi").getDocuments();
     return snap.documents;
   } // get data from server, table name internationalnews
 
@@ -36,7 +36,7 @@ class _SportsNewsState extends State<SportsNews> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
               child: Text(
-                "Data Loading..",
+                "Data Loading...",
                 style: TextStyle(
                   fontSize: 18.0,
                   color: Colors.white,

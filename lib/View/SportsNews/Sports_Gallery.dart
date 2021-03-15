@@ -13,7 +13,7 @@ class _SportsNews_GalleryState extends State<SportsNews_Gallery> {
     var firestore = Firestore.instance;
 
     QuerySnapshot snap =
-    await firestore.collection("InternationalAllNews").getDocuments();
+    await firestore.collection("nodnodi").getDocuments();
     return snap.documents;
   } // get data from server, table name internationalnews
 
@@ -33,7 +33,7 @@ class _SportsNews_GalleryState extends State<SportsNews_Gallery> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
               child: Text(
-                "Data Loading..",
+                "Data Loading...",
                 style: TextStyle(
                   fontSize: 18.0,
                   color: Colors.white,
@@ -110,9 +110,10 @@ class _SportsNews_GalleryState extends State<SportsNews_Gallery> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  "Sports News",
+                                  //"নদ ও নদী",
+                                  snapshot.data[index].data["title"],
                                   style: TextStyle(
-                                    fontSize: 20.0,
+                                    fontSize: 15.0,
                                     color: Colors.white,
                                   ),
                                 ),
