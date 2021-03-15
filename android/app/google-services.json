@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "855565665010",
+    "project_id": "gaibandha-260bf",
+    "storage_bucket": "gaibandha-260bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855565665010:android:ead65b7e9048027997866b",
+        "android_client_info": {
+          "package_name": "com.sujon.gaibandha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855565665010-st8hrbvncpurf2i4dhre1hl8j1r6qnl5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpn5tQ4quIM6Lgx-bbAVt6jrDqAh8bYRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855565665010-st8hrbvncpurf2i4dhre1hl8j1r6qnl5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
